@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="captcha-container">
+        <p>Please complete the captcha</p>
+        <input type="text" id="captcha-input" placeholder="Enter '1234'">
+        <button onclick="verifyCaptcha()">Submit</button>
+    </div>
+    <div id="date-input-container" style="display:none;">
+        <p>Enter the current date (DD/MM/YYYY)</p>
+        <input type="text" id="date-input" placeholder="DD/MM/YYYY">
+        <button onclick="verifyDate()">Submit</button>
+        <p id="feedback"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
