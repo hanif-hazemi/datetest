@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Project</title>
+    <title>Plants vs. Zombies Style Project</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Add a Google Font for the Plants vs. Zombies style -->
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="captcha-container">
-        <p>Please complete the captcha</p>
-        <input type="text" id="captcha-input" placeholder="Enter '1234'">
-        <button onclick="verifyCaptcha()">Submit</button>
+    <div id="container">
+        <div id="captcha-container">
+            <p>Please complete the captcha: <span id="captcha"></span></p>
+            <input type="text" id="captcha-input" placeholder="Enter the captcha">
+            <button onclick="verifyCaptcha()">Submit</button>
+        </div>
+        <div id="date-input-container" style="display:none;">
+            <p>Enter the current date (DD/MM/YYYY)</p>
+            <input type="text" id="date-input" placeholder="DD/MM/YYYY">
+            <button onclick="verifyDate()">Submit</button>
+            <p id="feedback"></p>
+            <div id="countdown" style="display:none;">
+                <p>Page will reload in <span id="countdown-timer">10</span> seconds...</p>
+                <img src="https://media.tenor.com/CrhrU7ebGucAAAAi/unless-you-include-this.gif" alt="Loading" id="loading-gif">
+            </div>
+        </div>
     </div>
-    <div id="date-input-container" style="display:none;">
-        <p>Enter the current date (DD/MM/YYYY)</p>
-        <input type="text" id="date-input" placeholder="DD/MM/YYYY">
-        <button onclick="verifyDate()">Submit</button>
-        <p id="feedback"></p>
-    </div>
+
+    <div id="player"></div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="script.js"></script>
 </body>
 </html>
