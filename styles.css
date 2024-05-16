@@ -1,29 +1,72 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Chewy', sans-serif; /* Plants vs. Zombies style font */
+    background-color: #6b8e23; /* Plants vs. Zombies grassy green background */
+    color: #ffffff; /* White text for contrast */
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     margin: 0;
+    background-image: url('bg.png'); /* Plants vs. Zombies themed background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Hide any overflow */
 }
 
-#captcha-container, #date-input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #2e8b57; /* Plants vs. Zombies green border */
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black panel */
+    box-shadow: 0px 0px 10px 5px #000000; /* Shadow for depth */
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.2em; /* Slightly larger text */
 }
 
 input {
     margin: 10px 0;
-    padding: 5px;
+    padding: 10px;
+    border: 2px solid #2e8b57; /* Plants vs. Zombies green border */
+    border-radius: 5px;
+    background-color: #556b2f; /* Dark green input background */
+    color: #ffffff; /* White text */
+    font-size: 1.1em; /* Larger input text */
 }
 
 button {
-    padding: 5px 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e8b57; /* Plants vs. Zombies green button */
+    color: #ffffff;
+    font-size: 1.2em; /* Larger button text */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3cb371; /* Lighter green on hover */
 }
 
 #feedback {
     margin-top: 10px;
-    color: red;
+    color: #ff6347; /* Tomato red text for feedback */
+}
+
+#captcha {
+    font-weight: bold;
+    color: #adff2f; /* Green-yellow text for captcha */
+}
+
+#countdown {
+    margin-top: 20px;
+}
+
+#loading-gif {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-top: 10px;
 }
